@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:WotAnalizator;assembly=WotAnalizator"
+             x:Class="WotAnalizator.Pages.AboutPage">
+  <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Padding="20" BackgroundColor="White">
+    <StackLayout>
+      <Image  Source="{local:ImageResource WotAnalizator.Images.mainlogo.png}"/>
+    </StackLayout>
+    <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+      <Label TextColor="Black">
+        Приложение WotAnalizator помогает Вам узнать, сколько времени Вы потратили на игру World Of Tanks.
+      </Label>
+    </StackLayout>
+  </StackLayout>
+</ContentPage>

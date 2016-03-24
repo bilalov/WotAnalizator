@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:WotAnalizator;assembly=WotAnalizator"
+             x:Class="WotAnalizator.Pages.MainPage">
+  <ScrollView>
+    <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Padding="20" BackgroundColor="White">
+      <StackLayout>
+        <Image  Source="{local:ImageResource WotAnalizator.Images.mainlogo.jpg}"/>
+      </StackLayout>
+      <StackLayout>
+        <Label Text="Сколько лет Вы играете в игру" TextColor="Black"/>
+        <Entry Text="{Binding PlayerStat.TotalTime}" TextColor="Black" BackgroundColor="Red"/>
+        <Label Text="Количество боев" TextColor="Black" />
+        <Entry Text="{Binding PlayerStat.Counts}" TextColor="Black" BackgroundColor="Red"/>
+        <Label Text="Среднее время боя" TextColor="Black"/>
+        <Entry Text="{Binding PlayerStat.AverageTime}" TextColor="Black" BackgroundColor="Red"/>
+        <Label Text="{Binding PlayerStat.FightResult}" TextColor="Red" HorizontalOptions="Center"/>
+      </StackLayout>
+    </StackLayout>
+  </ScrollView>
+</ContentPage>

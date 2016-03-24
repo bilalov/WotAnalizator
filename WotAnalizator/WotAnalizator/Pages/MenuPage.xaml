@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:WotAnalizator;assembly=WotAnalizator"
+             x:Class="WotAnalizator.Pages.MenuPage">
+  <ScrollView>
+    <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Padding="20" BackgroundColor="White">
+      <StackLayout>
+        <Image  Source="{local:ImageResource WotAnalizator.Images.mainlogo.png}"/>
+      </StackLayout>
+      <StackLayout>
+        <Button Text="Ввести данные" TextColor="Black" Command="{Binding MoveToMainViewCommand}" BackgroundColor="Transparent"/>
+        <Button Text="Об игре" TextColor="Black" Command="{Binding MoveToAboutViewCommand}" BackgroundColor="Transparent"/>
+        <Button Text="Авторские права" TextColor="Black" Command="{Binding MoveToCopyrightCommand}" BackgroundColor="Transparent"/>
+      </StackLayout>
+      <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+        <Label Text="Вы знаете, что..." TextColor="Green" XAlign="Start" FontAttributes="Italic"/>
+        <Label TextColor="Red" FontAttributes="Italic" HorizontalOptions="Center" VerticalOptions="Center">
+          Ученые доказали, что после долгой игры в компьютерные игры у человека постепенно разрушаются клетки мозга
+        </Label>
+      </StackLayout>
+    </StackLayout>
+  </ScrollView>
+</ContentPage>

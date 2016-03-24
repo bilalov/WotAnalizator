@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:WotAnalizator;assembly=WotAnalizator"
+             x:Class="WotAnalizator.Pages.CopyrightPage">
+  <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Padding="20" BackgroundColor="White">
+    <StackLayout>
+      <Image  Source="{local:ImageResource WotAnalizator.Images.wotlogo.png}"/>
+    </StackLayout>
+    <StackLayout>
+      <Label TextColor="Black">
+        Данное приложение НЕ является продуктом компании Wargaming.net и создано в согласно правил Wargaming Developer Partner Program: http://eu.wargaming.net/developers/documentation/rules/rules/
+
+        Правовое уведомление. Авторские права содержащихся изображений и материалов принадлежат компании Wargaming.Net и являются интеллектуальной собственностью Wargaming.Net: Copyright © Wargaming.net ®, Все права защищены. Мир Танков, WoT, World of Tanks являются товарными знаками или зарегистрированными товарными знаками компании Wargaming.net.
+      </Label>
+    </StackLayout>
+  </StackLayout>
+</ContentPage>
