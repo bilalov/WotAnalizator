@@ -10,12 +10,12 @@
       </StackLayout>
       <StackLayout>
         <Label Text="Сколько лет Вы играете в игру" TextColor="Black"/>
-        <Entry Text="{Binding PlayerStat.TotalTime}" TextColor="Black" BackgroundColor="Red"/>
+        <Entry Text="{Binding TotalTime}" TextColor="Black" BackgroundColor="Red"/>
         <Label Text="Количество боев" TextColor="Black" />
-        <Entry Text="{Binding PlayerStat.Counts}" TextColor="Black" BackgroundColor="Red"/>
+        <Entry Text="{Binding Counts}" TextColor="Black" BackgroundColor="Red"/>
         <Label Text="Среднее время боя" TextColor="Black"/>
-        <Entry Text="{Binding PlayerStat.AverageTime}" TextColor="Black" BackgroundColor="Red"/>
-        <Label Text="{Binding PlayerStat.FightResult}" TextColor="Red" HorizontalOptions="Center"/>
+        <Entry Text="{Binding AverageTime}" TextColor="Black" BackgroundColor="Red"/>
+        <Label Text="{Binding FightResult}" TextColor="Red" HorizontalOptions="Center"/>
       </StackLayout>
     </StackLayout>
   </ScrollView>

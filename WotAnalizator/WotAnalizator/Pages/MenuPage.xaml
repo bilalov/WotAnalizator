@@ -5,9 +5,7 @@
              x:Class="WotAnalizator.Pages.MenuPage">
   <ScrollView>
     <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Padding="20" BackgroundColor="White">
-      <StackLayout>
-        <Image  Source="{local:ImageResource WotAnalizator.Images.mainlogo.png}"/>
-      </StackLayout>
+      <Image  Source="{local:ImageResource WotAnalizator.Images.mainlogo.png}"/>
       <StackLayout>
         <Button Text="Ввести данные" TextColor="Black" Command="{Binding MoveToMainViewCommand}" BackgroundColor="Transparent"/>
         <Button Text="Об игре" TextColor="Black" Command="{Binding MoveToAboutViewCommand}" BackgroundColor="Transparent"/>
